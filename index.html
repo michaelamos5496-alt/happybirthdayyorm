@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Happy Birthday, Yorm</title>
+  <meta name="description" content="A little something for someone special.">
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="theme-color" content="#FFFFFF">
+
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Happy Birthday, Yorm">
+  <meta property="og:description" content="A little something for someone special.">
+  <meta property="og:image" content="assets/images/yorm-portrait.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" href="assets/icons/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Inter:wght@300;400;500&family=Pinyon+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <noscript><style>
+    .gate { display: none !important; }
+    main[hidden] { display: block !important; }
+    [data-reveal], .hello span, .intro__eyebrow, .intro__sub, .cue { opacity: 1 !important; transform: none !important; filter: none !important; }
+    .print__img { clip-path: none !important; }
+  </style></noscript>
+</head>
+<body>
+
+  <canvas id="atmosphere" aria-hidden="true"></canvas>
+  <div class="vignette" aria-hidden="true"></div>
+  <div class="grain" aria-hidden="true"></div>
+  <div class="veil" id="veil" aria-hidden="true"></div>
+
+  <!-- ═════════ OPENING · the envelope ═════════ -->
+  <section class="gate" id="gate" aria-label="A birthday card for Yorm">
+    <div class="gate__copy">
+      <p class="eyebrow">A little something for someone special.</p>
+    </div>
+
+    <div class="envelope-stage">
+      <div class="envelope" id="envelope" role="button" tabindex="-1" aria-label="Open the envelope">
+        <div class="env__back"></div>
+        <div class="env__card" aria-hidden="true">
+          <span class="env__card-name">Yorm,</span>
+          <i></i><i></i><i></i><i></i>
+        </div>
+        <div class="env__side env__side--l"></div>
+        <div class="env__side env__side--r"></div>
+        <div class="env__lift"><div class="env__bottom"></div></div>
+        <div class="env__flap-shadow"><div></div></div>
+        <div class="env__flap">
+          <div class="env__flap-inner">
+            <div class="env__flap-face env__flap-face--out"></div>
+            <div class="env__flap-face env__flap-face--in"></div>
+          </div>
+        </div>
+        <div class="seal" aria-hidden="true">
+          <div class="seal__half seal__half--l"><div class="seal__face"><span class="seal__mono">Y</span></div></div>
+          <div class="seal__half seal__half--r"><div class="seal__face"><span class="seal__mono">Y</span></div></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="gate__foot">
+      <h1 class="gate__title">Happy Birthday, <em>Yorm.</em></h1>
+      <button class="btn" id="open" type="button"><span>Open your wish</span></button>
+      <p class="gate__hint" id="soundHint" hidden>Turn your sound on</p>
+    </div>
+  </section>
+
+  <!-- ═════════ THE CARD ═════════ -->
+  <main id="card" hidden>
+    <div class="rail" aria-hidden="true"><span id="railFill"></span></div>
+
+    <!-- 1 · Hello -->
+    <section class="scene intro" id="intro">
+      <div class="intro__inner">
+        <p class="eyebrow intro__eyebrow">Today, and always</p>
+        <h2 class="hello" id="hello" tabindex="-1">
+          <span class="hello__a">Happy birthday,</span>
+          <span class="hello__b">Yorm.</span>
+        </h2>
+        <p class="intro__sub">To an extraordinary human&nbsp;being.</p>
+      </div>
+      <div class="cue" aria-hidden="true"><span>Scroll gently</span><i></i></div>
+    </section>
+
+    <!-- 2 · The portrait -->
+    <section class="scene portrait" id="portrait">
+      <div class="portrait__grid">
+        <figure class="print" data-reveal>
+          <span class="print__img"><img src="assets/images/yorm-portrait.jpg" alt="Yorm Aggor, smiling, holding a camera beside a director’s chair" width="1280" height="1600" decoding="async"></span>
+          <figcaption class="print__cap">Yorm Aggor</figcaption>
+        </figure>
+        <div class="portrait__text">
+          <p class="eyebrow" data-reveal>To an extraordinary human being</p>
+          <p class="display display--left" data-reveal style="--d:.15s">Happy birthday, <em>Yorm&nbsp;Aggor.</em></p>
+          <div class="rule rule--left" data-reveal style="--d:.35s"></div>
+          <p class="prose" data-reveal style="--d:.45s">Today is all about celebrating you,&nbsp;Yorm.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3 · The letter -->
+    <section class="scene letter" id="letter">
+      <article class="paper" data-reveal>
+        <p class="paper__salute" data-reveal style="--d:.35s">For you, Yorm,</p>
+        <p data-reveal style="--d:.5s">I hope you know how special you are and how fortunate the people around you are to have&nbsp;you.</p>
+        <p data-reveal style="--d:.6s">You are genuinely one of the sweetest people, an incredible friend and the kind of big sister anyone would be lucky to&nbsp;have.</p>
+        <p data-reveal style="--d:.7s">Your kindness, warmth and beautiful personality are qualities I genuinely&nbsp;appreciate.</p>
+        <p class="paper__close" data-reveal style="--d:.8s">Beyond your incredible talent as a producer and director, what makes you even more special is the person you&nbsp;are.</p>
+      </article>
+    </section>
+
+    <!-- 4 · Her own story -->
+    <section class="scene story" id="story">
+      <div class="wrap wrap--wide wrap--center">
+        <div class="frame" data-reveal>
+          <span class="frame__c frame__c--tl"></span><span class="frame__c frame__c--tr"></span>
+          <span class="frame__c frame__c--bl"></span><span class="frame__c frame__c--br"></span>
+          <p class="eyebrow frame__tag">Scene one · Take one</p>
+          <p class="story__a" data-reveal style="--d:.25s">You spend so much time creating beautiful stories and bringing other people’s ideas to&nbsp;life.</p>
+          <p class="display story__b" data-reveal style="--d:.6s">Today, I hope you get to enjoy <em>a beautiful story of your&nbsp;own.</em></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5 · The wishes -->
+    <section class="scene wishes" id="wishes">
+      <div class="wrap wrap--wide">
+        <p class="eyebrow" data-reveal>I wish you</p>
+        <ol class="wishlist">
+          <li data-reveal><span class="wishlist__n">I</span><span class="wishlist__w">Happiness</span></li>
+          <li data-reveal style="--d:.1s"><span class="wishlist__n">II</span><span class="wishlist__w">Good health</span></li>
+          <li data-reveal style="--d:.2s"><span class="wishlist__n">III</span><span class="wishlist__w">Peace of mind</span></li>
+          <li data-reveal style="--d:.3s"><span class="wishlist__n">IV</span><span class="wishlist__w">Genuine love</span></li>
+          <li data-reveal style="--d:.4s"><span class="wishlist__n">V</span><span class="wishlist__w">Greater opportunities</span></li>
+          <li data-reveal style="--d:.5s"><span class="wishlist__n">VI</span><span class="wishlist__w"><em>and everything beautiful that life has to&nbsp;offer.</em></span></li>
+        </ol>
+        <div class="rule rule--left" data-reveal></div>
+        <p class="prose prose--lead" data-reveal style="--d:.15s">May this new chapter bring you more reasons to smile, bigger dreams to achieve and countless moments worth&nbsp;remembering.</p>
+      </div>
+    </section>
+
+    <!-- 6 · Always -->
+    <section class="scene always" id="always">
+      <div class="wrap wrap--center">
+        <p class="eyebrow" data-reveal>Today, and always</p>
+        <h2 class="display display--xl" data-reveal style="--d:.15s">Never stop being the <em>wonderful</em> person you&nbsp;are.</h2>
+        <p class="prose" data-reveal style="--d:.4s">You deserve to be celebrated, today and&nbsp;always.</p>
+      </div>
+    </section>
+
+    <!-- 7 · More life -->
+    <section class="scene finale" id="finale">
+      <canvas class="confetti" id="confetti" aria-hidden="true"></canvas>
+      <div class="wrap wrap--wide wrap--center">
+        <h2 class="more">
+          <span data-reveal>More life.</span>
+          <span data-reveal style="--d:.2s"><em>More love.</em></span>
+          <span data-reveal style="--d:.4s">More laughter.</span>
+          <span class="more__script" data-reveal style="--d:.6s">More beautiful moments.</span>
+        </h2>
+        <div class="rule" data-reveal style="--d:.8s"></div>
+        <p class="finale__year" data-reveal style="--d:.9s">Here’s to another beautiful year.</p>
+
+        <div class="ps" id="ps" data-reveal style="--d:1s">
+          <div class="ps__top"><div>
+            <button class="ps__seal" id="psSeal" type="button" aria-expanded="false" aria-controls="psNote">
+              <span class="ps__wax" aria-hidden="true">
+                <span class="seal__half seal__half--l"><span class="seal__face"><span class="seal__mono">Y</span></span></span>
+                <span class="seal__half seal__half--r"><span class="seal__face"><span class="seal__mono">Y</span></span></span>
+              </span>
+              <span class="ps__label">One more thing</span>
+            </button>
+          </div></div>
+          <div class="ps__note" id="psNote" role="region" aria-label="One more thing"><div>
+            <div class="ps__paper">
+              <p class="ps__big">Happy birthday, Yorm!</p>
+              <p>With love and genuine appreciation.</p>
+            </div>
+          </div></div>
+        </div>
+
+        <div class="finale__actions" data-reveal style="--d:1.1s">
+          <button class="btn btn--quiet" id="again" type="button"><span>Read it again</span></button>
+          <button class="btn btn--quiet" id="celebrate" type="button"><span>Celebrate again</span></button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Optional music: appears only if the file exists; starts inside the "Open" tap -->
+  <button class="sound off" id="sound" type="button" aria-pressed="false" aria-label="Play music" hidden>
+    <span class="sound__bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+  </button>
+  <audio id="song" src="assets/audio/birthday-soundtrack.mp3" preload="auto" loop></audio>
+
+  <script src="js/main.js" defer></script>
+</body>
+</html>
