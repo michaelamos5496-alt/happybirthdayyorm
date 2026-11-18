@@ -7,7 +7,7 @@ index.html
 css/style.css
 js/main.js
 assets/images/yorm-portrait.jpg   ← the photograph
-assets/audio/                      ← optional: birthday-soundtrack.mp3
+assets/audio/                      ← birthday-soundtrack.mp3 (The Birthday Song)
 assets/icons/favicon.svg
 ```
 
@@ -33,7 +33,7 @@ Then open <http://localhost:8000>.
 Replace `assets/images/yorm-portrait.jpg` with another photo, keeping the same filename. A portrait (4:5) shape works best. The current photo is the portrait from aggoryorm.com.
 
 ## Add music (optional)
-The soundtrack is "The Birthday Song", saved as `assets/audio/birthday-soundtrack.mp3`. A small **Play music** button then appears in the corner. Music only starts when the visitor taps it. Without the file, the button stays hidden.
+The soundtrack is "The Birthday Song", saved as `assets/audio/birthday-soundtrack.mp3`. It fades in when she taps **Open your wish** and loops. The round button in the top corner pauses or resumes it. To change the song, replace that file and keep the same name.
 
 ## Edit the words
 All the text is in `index.html`, grouped under numbered comments, one per scene.
