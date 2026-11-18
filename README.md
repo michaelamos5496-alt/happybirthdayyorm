@@ -33,7 +33,7 @@ Then open <http://localhost:8000>.
 Replace `assets/images/yorm-portrait.jpg` with another photo, keeping the same filename. A portrait (4:5) shape works best. The current photo is the portrait from aggoryorm.com.
 
 ## Add music (optional)
-Add a track you have the rights to as `assets/audio/birthday-soundtrack.mp3`. A small **Play music** button then appears in the corner. Music only starts when the visitor taps it. Without the file, the button stays hidden.
+The soundtrack is "The Birthday Song", saved as `assets/audio/birthday-soundtrack.mp3`. A small **Play music** button then appears in the corner. Music only starts when the visitor taps it. Without the file, the button stays hidden.
 
 ## Edit the words
 All the text is in `index.html`, grouped under numbered comments, one per scene.
@@ -41,4 +41,3 @@ All the text is in `index.html`, grouped under numbered comments, one per scene.
 ## Share it
 The card is a static site. Drag this folder onto <https://app.netlify.com/drop>, or run `npx vercel` here, to get a single link you can send. `noindex` keeps it out of search engines.
 
-While no soundtrack is added, the browser console shows a "404" for the missing audio file. It's harmless.
