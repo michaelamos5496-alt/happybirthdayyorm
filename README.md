@@ -30,7 +30,7 @@ python3 -m http.server 8000
 Then open <http://localhost:8000>.
 
 ## Change the photograph
-Replace `assets/images/yorm-portrait.jpg` with another photo, keeping the same filename. A portrait (4:5) shape works best. The current photo is the portrait from aggoryorm.com.
+Replace `assets/images/yorm-portrait.jpg` with another photo, keeping the same filename. A portrait (3:4) shape works best. The current image is an illustration of Yorm on a motorbike with friends.
 
 ## Add music (optional)
 The soundtrack is "The Birthday Song", saved as `assets/audio/birthday-soundtrack.mp3`. It fades in when she taps **Open your wish** and loops. The round button in the top corner pauses or resumes it. To change the song, replace that file and keep the same name.
